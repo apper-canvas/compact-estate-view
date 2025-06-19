@@ -1,13 +1,18 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useSelector } from 'react-redux';
 import ApperIcon from '@/components/ApperIcon';
 import SearchBar from '@/components/molecules/SearchBar';
+import Button from '@/components/atoms/Button';
 import { routes } from '@/config/routes';
+import { AuthContext } from '@/App';
 
 const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { logout } = useContext(AuthContext);
+  const { user, isAuthenticated } = useSelector((state) => state.user);
 
   const mainRoutes = Object.values(routes).filter(route => !route.hidden);
 
@@ -20,6 +25,11 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleLogout = async () => {
+    if (logout) {
+      await logout();
+    }
+  };
   return (
     <header className="flex-shrink-0 bg-white border-b border-gray-200 shadow-sm sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,6 +67,26 @@ const Header = () => {
           {/* Desktop Search */}
           <div className="hidden lg:block flex-1 max-w-md ml-8">
             <SearchBar onSearch={handleSearch} />
+</div>
+
+          {/* User Actions */}
+          <div className="hidden md:flex items-center gap-4">
+            {isAuthenticated && user && (
+              <>
+                <div className="flex items-center gap-2 text-sm text-gray-600">
+                  <ApperIcon name="User" size={16} />
+                  <span>Welcome, {user.firstName || user.emailAddress}</span>
+                </div>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleLogout}
+                  icon="LogOut"
+                >
+                  Logout
+                </Button>
+              </>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -111,8 +141,27 @@ const Header = () => {
                   >
                     <ApperIcon name={route.icon} size={20} className="mr-3" />
                     {route.label}
-                  </NavLink>
+</NavLink>
                 ))}
+                
+                {/* Mobile User Actions */}
+                {isAuthenticated && user && (
+                  <div className="border-t border-gray-200 mt-4 pt-4">
+                    <div className="px-4 py-2 text-sm text-gray-600 flex items-center gap-2">
+                      <ApperIcon name="User" size={16} />
+                      <span>Welcome, {user.firstName || user.emailAddress}</span>
+                    </div>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={handleLogout}
+                      icon="LogOut"
+                      className="mx-4 mt-2 w-[calc(100%-2rem)]"
+                    >
+                      Logout
+                    </Button>
+                  </div>
+                )}
               </nav>
             </motion.div>
           </>

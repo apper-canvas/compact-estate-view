@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "propertyId": "1",
+    "savedDate": "2024-01-28T10:30:00.000Z",
+    "notes": "Love the city views, need to schedule a viewing"
+  },
+  {
+    "Id": 2,
+    "propertyId": "3",
+    "savedDate": "2024-01-30T14:15:00.000Z",
+    "notes": "Perfect location near the beach"
+  }
+]

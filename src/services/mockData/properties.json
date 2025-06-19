@@ -1,0 +1,137 @@
+[
+  {
+    "Id": 1,
+    "title": "Luxurious Downtown Penthouse",
+    "price": 1250000,
+    "address": {
+      "street": "123 Skyline Boulevard",
+      "city": "Metro City",
+      "state": "CA",
+      "zipCode": "90210"
+    },
+    "bedrooms": 3,
+    "bathrooms": 2.5,
+    "squareFeet": 2400,
+    "propertyType": "Condo",
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&h=600&fit=crop"
+    ],
+    "description": "Stunning penthouse with panoramic city views, featuring floor-to-ceiling windows, modern finishes, and premium appliances. Located in the heart of downtown with easy access to dining, shopping, and entertainment.",
+    "amenities": ["Pool", "Gym", "Parking", "Balcony", "Air Conditioning", "Dishwasher"],
+    "listingDate": "2024-01-15T00:00:00.000Z",
+    "coordinates": {
+      "lat": 34.0522,
+      "lng": -118.2437
+    }
+  },
+  {
+    "Id": 2,
+    "title": "Charming Victorian Family Home",
+    "price": 850000,
+    "address": {
+      "street": "456 Oak Tree Lane",
+      "city": "Riverside",
+      "state": "CA",
+      "zipCode": "92501"
+    },
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "squareFeet": 3200,
+    "propertyType": "House",
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600563438938-a42d23d4f97b?w=800&h=600&fit=crop"
+    ],
+    "description": "Beautiful restored Victorian home with original hardwood floors, ornate moldings, and modern updates. Features a spacious backyard, updated kitchen, and cozy fireplace perfect for family gatherings.",
+    "amenities": ["Garden", "Fireplace", "Parking", "Washer/Dryer", "Air Conditioning"],
+    "listingDate": "2024-01-20T00:00:00.000Z",
+    "coordinates": {
+      "lat": 33.9806,
+      "lng": -117.3755
+    }
+  },
+  {
+    "Id": 3,
+    "title": "Modern Townhouse with Rooftop Deck",
+    "price": 675000,
+    "address": {
+      "street": "789 Maple Street",
+      "city": "Oceanview",
+      "state": "CA",
+      "zipCode": "90401"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "squareFeet": 1800,
+    "propertyType": "Townhouse",
+    "images": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600607688060-1ba5e2c5c3d8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop"
+    ],
+    "description": "Contemporary townhouse featuring an open floor plan, high-end finishes, and a private rooftop deck with ocean views. Walking distance to beach and local cafes.",
+    "amenities": ["Balcony", "Parking", "Air Conditioning", "Dishwasher", "Washer/Dryer"],
+    "listingDate": "2024-01-25T00:00:00.000Z",
+    "coordinates": {
+      "lat": 34.0194,
+      "lng": -118.4912
+    }
+  },
+  {
+    "Id": 4,
+    "title": "Spacious Garden Apartment",
+    "price": 425000,
+    "address": {
+      "street": "321 Pine Avenue",
+      "city": "Greenfield",
+      "state": "CA",
+      "zipCode": "91101"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareFeet": 950,
+    "propertyType": "Apartment",
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop"
+    ],
+    "description": "Bright and airy garden apartment with large windows, updated kitchen, and access to shared courtyard garden. Perfect for first-time buyers or investors.",
+    "amenities": ["Garden", "Parking", "Pet Friendly", "Washer/Dryer"],
+    "listingDate": "2024-02-01T00:00:00.000Z",
+    "coordinates": {
+      "lat": 34.1478,
+      "lng": -118.1445
+    }
+  },
+  {
+    "Id": 5,
+    "title": "Executive Estate with Pool",
+    "price": 1850000,
+    "address": {
+      "street": "987 Hillcrest Drive",
+      "city": "Beverly Heights",
+      "state": "CA",
+      "zipCode": "90210"
+    },
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "squareFeet": 4500,
+    "propertyType": "House",
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600563438938-a42d23d4f97b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&h=600&fit=crop"
+    ],
+    "description": "Magnificent executive home situated on 1.2 acres with resort-style amenities. Features gourmet kitchen, master suite with spa bathroom, and entertainer's backyard with pool and outdoor kitchen.",
+    "amenities": ["Pool", "Gym", "Garden", "Fireplace", "Parking", "Air Conditioning", "Dishwasher", "Washer/Dryer"],
+    "listingDate": "2024-02-05T00:00:00.000Z",
+    "coordinates": {
+      "lat": 34.0901,
+      "lng": -118.4065
+    }
+  }
+]
